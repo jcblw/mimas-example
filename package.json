@@ -1,0 +1,38 @@
+{
+  "name": "mimas-example",
+  "version": "1.0.0",
+  "description": "a sample of a configured mimas project",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "start": "npm run compile && MIMAS_SERVER_DIR=./lib/server mimas",
+    "compile": "babel ./src -d ./lib",
+    "compile-watch": "babel ./src -d ./lib -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcblw/mimas-example.git"
+  },
+  "author": "Jacob Lowe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcblw/mimas-example/issues"
+  },
+  "homepage": "https://github.com/jcblw/mimas-example#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "browserify-middleware": "^7.0.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  }
+}
